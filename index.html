@@ -12,6 +12,18 @@
 
         <div id="root">
 
+            <h1>Mail-list</h1>
+
+            <template v-if="randomEmails.length >= emailCount">
+                <ul>
+                    <li v-for="(email, index) in randomEmails">
+                        {{email}}
+                    </li>
+                </ul>
+            </template>
+
+            <button class='email_btn' @click='newMail()'>Another one?</button>
+
         </div>   
         
         <!-- AXIOS -->

@@ -3,3 +3,31 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+#root{
+    width: 40%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+    margin: 50px
+}
+ul li {
+    margin: 10px;
+}
+.email_btn {
+	box-shadow: 0px 10px 14px -7px #e94909;
+	background-color:#ebab22;
+	border-radius:42px;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+}
+.email_btn:hover {
+	background:linear-gradient(to bottom, #cf7b1b 5%, #ff6004 100%);
+	background-color:#408c99;
+}
