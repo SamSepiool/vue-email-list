@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 #root{
@@ -12,7 +13,9 @@
 
 ul{
     list-style: none;
-    margin: 50px
+    margin: 50px;
+    height: 400px;
+    overflow-y: scroll;
 }
 ul li {
     margin: 10px;

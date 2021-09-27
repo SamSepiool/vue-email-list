@@ -14,8 +14,9 @@ const app = new Vue ({
             axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
             .then((response) =>{
                 this.randomEmails.push(response.data.response);
-                // (this.emailCount >= 10) ? this.emailCount++ : null;
+                (this.randomEmails.length >= 10) ? this.emailCount++ : null
             })
+            
             
            
         }
@@ -25,6 +26,8 @@ const app = new Vue ({
         for(let i = 0; i < this.emailCount; i++){
             this.newMail();
         }
+        //elimina incremento dell'ultimo ciclo al contatore delle email (pareggia)
+        this.emailCount--;             
         console.log(this.randomEmails)
     },
 })
